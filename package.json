@@ -1,11 +1,16 @@
 {
-  "name": "jswiss",
+  "name": "@themecraftstudio/jswiss",
   "version": "0.0.1",
   "description": "Multiplaform front-end Javascript utilities",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "Unlicense",
   "author": "Ettore Del Negro",
-  "license": "ISC"
+  "type":"module",
+  "exports": {
+    ".": "./lib.ts",
+    "./hooks": "./react-hooks/index.ts"
+  },
+  "peerDependencies": {
+    "react": ">= 18",
+    "react-dom": ">= 18"
+  }
 }
