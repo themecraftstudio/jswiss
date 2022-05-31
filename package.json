@@ -5,10 +5,7 @@
   "license": "Unlicense",
   "author": "Ettore Del Negro",
   "type":"module",
-  "exports": {
-    ".": "./lib.ts",
-    "./hooks": "./react-hooks/index.ts"
-  },
+  "main":"lib.ts",
   "peerDependencies": {
     "react": ">= 18",
     "react-dom": ">= 18"

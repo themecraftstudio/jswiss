@@ -8,3 +8,11 @@ export function useAbortController(): [AbortSignal, (reason?: any) => void] {
 
   return [ctrl.signal, abort];
 }
+
+export function useUnmountSignal(): AbortSignal {
+  const ctrl = useRef<AbortController>(new AbortController()).current;
+
+  useEffect(() => () => ctrl.abort(), []);
+
+  return ctrl.signal;
+}
